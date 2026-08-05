@@ -321,6 +321,7 @@ button {
 .institution-stamp {
   width: 68px;
   height: 68px;
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -330,7 +331,7 @@ button {
   box-shadow: inset 0 0 0 5px var(--paper-deep);
 }
 .institution-stamp img { width: 52px; height: 52px; object-fit: contain; mix-blend-mode: multiply; }
-.institution-stamp img[src$="zju-emblem.png"] { width: 112px; height: auto; max-width: none; }
+.institution-stamp img[src$="zju-emblem.png"] { width: 112px; height: auto; max-width: none; position: absolute; top: calc(50% + 0.5px); left: 50%; transform: translate(-50%, -50%); }
 .institution-stamp--wide { border-radius: 12px; }
 .institution-stamp--wide img { width: 58px; height: 30px; }
 
